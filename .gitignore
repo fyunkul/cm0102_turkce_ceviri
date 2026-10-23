@@ -1,0 +1,13 @@
+# Generated files and backups
+__pycache__/
+*.pyc
+*.bak
+*.autosave*
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Do not publish proprietary game binary files without permission
+*.ldb
+*.exe
+*.rar
