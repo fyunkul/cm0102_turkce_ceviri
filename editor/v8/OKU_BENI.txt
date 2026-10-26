@@ -1,0 +1,39 @@
+CM 01/02 Çeviri Editörü - Tasarım Güncellemesi
+
+Bu sürümde:
+- İngilizce ve Türkçe metin kutuları yan yana yerine ALT ALTA yerleştirildi.
+- Açık/gri görünüm yerine koyu ana tema kullanıldı.
+- 3 farklı tema eklendi:
+  1) Okyanus Mavisi
+  2) Gece Laciverti
+  3) Tam Siyah Pro
+- v65 alternatif çevirileri daha düzenli bir tabloda gösteriliyor.
+- Seçili alternatifi çift tıklayarak veya butonla Türkçe alana uygulayabilirsiniz.
+
+Dosyalar:
+- csv_ceviri_editor.py               -> Ana uygulama
+- baslat.bat                        -> Windows başlatıcı
+- language_EN_TR_v66_ESLESMELI.csv  -> Ana çalışma dosyası
+- tum_eslesme_adaylari.csv          -> Tüm eşleşme adayları raporu
+- incelenecek_358.csv               -> Belirsiz kayıtlar raporu
+- ornek_tasarim.png                 -> Onaylanan örnek arayüz görseli
+
+Not:
+- Bu uygulama CSV üzerinde çalışır; oyun binary dosyasına doğrudan yazmaz.
+- Python 3 yüklü olmalıdır.
+
+SON RÖTUŞLAR
+- Durum satırları renk kodlarıyla işaretlendi (kontrol edildi: yeşil; incelenecek: sarı).
+- İşlem butonlarına simgeler eklendi.
+- Seçili satır temanın vurgu rengiyle belirginleştirildi.
+- Kaydedilmemiş değişiklik varsa 60 saniyede bir, aynı CSV klasöründeki
+  yedekler/ dizinine zaman damgalı tam CSV yedeği oluşturulur.
+- Normal kayıttan sonra da bir yedek alınır; son yedek saati üst çubuktadır.
+- Türkçe karakter sayısı ve İngilizce/Türkçe placeholder karşılaştırması görünür.
+- Etiket denetimi sayı yanında birebir etiketleri de karşılaştırır.
+
+NOT: 255 karakter yalnızca görsel bir uyarı eşiğidir; gerçek oyun dosyası
+alan uzunluğunun doğrulanmış sınırı değildir.
+
+UYARI: Yedekler yer kaplayabilir. Ana CSV dosyanız yeniden yazılmadan önce
+ayrıca zaman damgalı .bak yedeği oluşturulur.
